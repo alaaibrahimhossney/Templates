@@ -246,3 +246,107 @@ nav ul li a:hover {
     width: 95%;
     vertical-align: middle; /* Align the image vertically in relation to text (if needed) */
 }
+/* Media queries start here */
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero {
+        height: 60vh; /* Reduce height of hero section */
+    }
+
+    .hero-text {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for projects */
+    }
+
+    .team {
+        flex-direction: column; /* Stack team members vertically */
+        align-items: center;
+    }
+
+    .team-member {
+        width: 90%; /* Full width for team members */
+    }
+
+    .contact {
+        padding: 15px;
+    }
+
+    .image-container img {
+        width: 90%;
+    }
+}
+
+/* Small devices (phones, 576px and up) */
+@media (max-width: 576px) {
+    nav ul {
+        flex-direction: column; /* Stack navbar items vertically */
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px; /* Space between navbar items */
+    }
+
+    .hero {
+        height: 50vh; /* Further reduce height of hero section */
+    }
+
+    .projects {
+        grid-template-columns: 1fr; /* Single column for projects */
+    }
+
+    .team-member {
+        width: 100%; /* Full width for team members */
+        margin-bottom: 20px; /* Add space between team members */
+    }
+
+    .contact input {
+        width: 100%;
+    }
+
+    .contact button {
+        width: 100%; /* Full width for contact button */
+    }
+
+    .image-container img {
+        width: 100%;
+    }
+}
+
+/* Extra small devices (phones, 360px and below) */
+@media (max-width: 360px) {
+    .hero {
+        height: 40vh; /* Reduce height of hero section */
+    }
+
+    .hero-text .br-logo {
+        font-size: 60px; /* Reduce logo font size */
+    }
+
+    .hero-text .architects {
+        font-size: 30px; /* Reduce architect text size */
+    }
+
+    .team-member h3 {
+        font-size: 18px; /* Reduce team member name font size */
+    }
+
+    .contact h3 {
+        font-size: 20px; /* Reduce contact header font size */
+    }
+
+    .contact p {
+        font-size: 14px; /* Reduce contact paragraph font size */
+    }
+}
