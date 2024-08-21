@@ -26,12 +26,12 @@ header {
 nav ul {
     list-style-type: none;
     display: flex;
-    margin: 0;  /* إزالة المسافات الافتراضية */
     padding: 0;
+     margin-right: 5%;
 }
 
 nav ul li {
-    margin-left: 20px; /* المسافة بين العناصر في الـ navbar */
+    margin-left: 20px; 
 }
 
 nav ul li a {
@@ -291,6 +291,7 @@ nav ul li a:hover {
     nav ul {
         flex-direction: column; /* Stack navbar items vertically */
         width: 100%;
+         position: relative;
     }
 
     nav ul li {
